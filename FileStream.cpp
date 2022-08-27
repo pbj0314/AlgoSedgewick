@@ -13,11 +13,16 @@ FileStream::FileStream(std::string fileName)
 
 bool FileStream::hasNext()
 {
-	if (stream.peek() != EOF)
+	while (stream.peek() != EOF)
 	{
+		char c = stream.peek();
+		if (c == '\n' || c == ' ')
+		{
+			stream.get();
+			continue;
+		}
 		return true;
 	}
-
 	return false;
 }
 

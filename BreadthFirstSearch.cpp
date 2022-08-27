@@ -56,9 +56,9 @@ void BreadthFirstSearch::search(Graph& g, int s)
 }
 
 
-int main(void)
-{
-	Graph g("..\\algs4-data\\tinyG.txt");
-	BreadthFirstSearch bfs;
-	bfs.findPath(g, 11, 10);
-}
+//int main(void)
+//{
+//	Graph g("..\\algs4-data\\tinyG.txt");
+//	BreadthFirstSearch bfs;
+//	bfs.findPath(g, 11, 10);
+//}
