@@ -52,8 +52,8 @@ void EdgeWeightedGraph::showAll()
 	}
 }
 
-int main(void)
-{
-	EdgeWeightedGraph ewg("..\\algs4-data\\tinyEWG.txt");
-	ewg.showAll();
-}
+//int main(void)
+//{
+//	EdgeWeightedGraph ewg("..\\algs4-data\\tinyEWG.txt");
+//	ewg.showAll();
+//}

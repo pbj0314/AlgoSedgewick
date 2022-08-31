@@ -136,6 +136,7 @@
     <ClCompile Include="EdgeWeightedGraph.cpp" />
     <ClCompile Include="FileStream.cpp" />
     <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="LazyPrimMST.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BreadthFirstSearch.h" />
@@ -147,6 +148,7 @@
     <ClInclude Include="EdgeWeightedGraph.h" />
     <ClInclude Include="FileStream.h" />
     <ClInclude Include="Graph.h" />
+    <ClInclude Include="LazyPrimMST.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
