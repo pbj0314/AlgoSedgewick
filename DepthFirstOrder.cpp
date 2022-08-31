@@ -72,11 +72,11 @@ void DepthFirstOrder::dfs(Digraph& dg, int v)
 	revPost.push(v);
 }
 
-int main(void)
-{
-	Digraph dg("..\\algs4-data\\tinyDAG.txt");
-	DepthFirstOrder dfo(dg);
-	dfo.preOrder();
-	dfo.postOrder();
-	dfo.revPostOrder();
-}
+//int main(void)
+//{
+//	Digraph dg("..\\algs4-data\\tinyDAG.txt");
+//	DepthFirstOrder dfo(dg);
+//	dfo.preOrder();
+//	dfo.postOrder();
+//	dfo.revPostOrder();
+//}
