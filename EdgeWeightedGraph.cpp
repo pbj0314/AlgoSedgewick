@@ -34,7 +34,7 @@ void EdgeWeightedGraph::addEdge(Edge e)
 	data[w].push_front(e);
 }
 
-std::forward_list<Edge>* EdgeWeightedGraph::getNeightbor(int v)
+std::forward_list<Edge>* EdgeWeightedGraph::getAdjEdge(int v)
 {
 	return &data[v];
 }

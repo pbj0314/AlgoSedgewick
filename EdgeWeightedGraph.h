@@ -14,7 +14,7 @@ public:
 public:
 	EdgeWeightedGraph(std::string fileName);
 	void addEdge(Edge e);
-	std::forward_list<Edge>* getNeightbor(int v);
+	std::forward_list<Edge>* getAdjEdge(int v);
 	void showAll();
 };
 

@@ -25,3 +25,33 @@ float Edge::getWeight()
 {
 	return weight;
 }
+
+bool Edge::operator==(Edge& e)
+{
+	float anotherWeight = e.getWeight();
+	if (weight == anotherWeight)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool Edge::operator<(Edge& e)
+{
+	float anotherWeight = e.getWeight();
+	if (weight < anotherWeight)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool Edge::operator>(Edge& e)
+{
+	float anotherWeight = e.getWeight();
+	if (weight > anotherWeight)
+	{
+		return true;
+	}
+	return false;
+}
