@@ -67,14 +67,13 @@ void EdgeWeightedGraph::showNeighbor(int v)
 	}
 }
 
-int main(void)
-{
-	//EdgeWeightedGraph ewg("..\\algs4-data\\tinyEWG.txt");
-	////ewg.showAll();
-	//for (int i = 0; i < ewg.V; i++)
-	//{
-	//	ewg.showNeighbor(i);
-	//	std::cout << std::endl;
-	//}
-	
-}
+//int main(void)
+//{
+//	EdgeWeightedGraph ewg("..\\algs4-data\\tinyEWG.txt");
+//	//ewg.showAll();
+//	for (int i = 0; i < ewg.V; i++)
+//	{
+//		ewg.showNeighbor(i);
+//		std::cout << std::endl;
+//	}
+//}
