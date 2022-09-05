@@ -11,8 +11,6 @@ public:
 	int either();
 	int other(int v);
 	float getWeight();
-	bool operator==(Edge& e);
-	bool operator<(Edge& e);
-	bool operator>(Edge& e);
+	bool operator<(const Edge& operand);
 };
 

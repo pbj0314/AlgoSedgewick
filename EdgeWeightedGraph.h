@@ -16,5 +16,6 @@ public:
 	void addEdge(Edge e);
 	std::forward_list<Edge>* getAdjEdge(int v);
 	void showAll();
+	void showNeighbor(int v);
 };
 

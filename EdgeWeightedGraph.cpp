@@ -1,6 +1,6 @@
 #include "EdgeWeightedGraph.h"
 #include "FileStream.h"
-
+#include <algorithm>
 EdgeWeightedGraph::EdgeWeightedGraph(std::string fileName)
 {
 	FileStream fs(fileName);
@@ -52,8 +52,29 @@ void EdgeWeightedGraph::showAll()
 	}
 }
 
-//int main(void)
-//{
-//	EdgeWeightedGraph ewg("..\\algs4-data\\tinyEWG.txt");
-//	ewg.showAll();
-//}
+void EdgeWeightedGraph::showNeighbor(int v)
+{
+	std::vector<Edge> vec;
+	for (auto& e : data[v])
+	{
+		vec.push_back(e);
+	}
+	std::sort(vec.begin(),vec.end());
+	for (auto& e : vec)
+	{
+		int w = e.other(v);
+		std::cout << v << "-" << w << " " << e.getWeight() << std::endl;
+	}
+}
+
+int main(void)
+{
+	//EdgeWeightedGraph ewg("..\\algs4-data\\tinyEWG.txt");
+	////ewg.showAll();
+	//for (int i = 0; i < ewg.V; i++)
+	//{
+	//	ewg.showNeighbor(i);
+	//	std::cout << std::endl;
+	//}
+	
+}
